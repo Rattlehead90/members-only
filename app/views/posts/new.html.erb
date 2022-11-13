@@ -1,3 +1,6 @@
+<%= render 'errors' %>
+
+<h3>Author's username: <%= current_user.username %> (id: <%= current_user.id %>)</h3>
 <%= form_with model: @post do |form| %>
   <%= form.label :title, 'Title:' %>
   <%= form.text_field :title %>
