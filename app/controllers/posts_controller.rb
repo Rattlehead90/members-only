@@ -14,4 +14,8 @@ class PostsController < ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
+
+  def index
+    @posts = Post.all
+  end
 end
