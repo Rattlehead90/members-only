@@ -1,6 +1,15 @@
 <h1>All posts</h1>
-<ul>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Content</th>
+    <th>Author</th>
+  </tr>
   <% @posts.each do |post| %>
-    <li><%= post.title %></li>
+    <tr>
+      <td><%= post.title %></td>
+      <td><%= post.content %></td>
+      <td><%= post.user_id %></td>
+    </tr>
   <% end %>
-</ul>
+</table>
