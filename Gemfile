@@ -15,6 +15,9 @@ gem "sqlite3", "~> 1.4"
 # Devise is a flexible authentication solution for Rails based on Warden:
 gem 'devise'
 
+# Rubocop
+gem 'rubocop'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
